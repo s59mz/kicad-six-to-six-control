@@ -1,0 +1,119 @@
+
+(rules PCB six_to_six_control
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 749)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.3)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.8)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_800:400_um-Power" "Via[0-1]_800:400_um" Power
+  )
+  (via 
+    "Via[0-1]_800:400_um-gnd" "Via[0-1]_800:400_um" gnd
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (via_rule
+    Power "Via[0-1]_800:400_um-Power"
+  )
+  (via_rule
+    gnd "Via[0-1]_800:400_um-gnd"
+  )
+  (class default
+    "unconnected-(A1-Pad0)" "unconnected-(A1-Pad1)" "Net-(A1-Pad2)" "unconnected-(A1-Pad3)" "unconnected-(A1-Pad3V3)" "unconnected-(A1-Pad4)" "unconnected-(A1-Pad5)" "unconnected-(A1-Pad5V_1)"
+    "Net-(A1-Pad18)" "unconnected-(A1-Pad6)" "unconnected-(A1-Pad7)" "unconnected-(A1-Pad8)" "unconnected-(A1-Pad9)" "unconnected-(A1-Pad10)" "unconnected-(A1-Pad11)" "unconnected-(A1-Pad12)"
+    "unconnected-(A1-Pad13)" "unconnected-(A1-Pad14)" "unconnected-(A1-Pad15)" "unconnected-(A1-Pad16)" "unconnected-(A1-Pad17)" "Net-(A1-Pad19)" "/gpio1_1" "unconnected-(A1-Pad20)"
+    "unconnected-(A1-Pad21)" "/gpio1_6" "/gpio1_2" "/gpio1_5" "/gpio1_3" "/gpio1_4" "/gpio2_1" "/gpio2_6"
+    "/gpio2_2" "/gpio2_5" "/gpio2_3" "/gpio2_4" "/gpio3_1" "/gpio3_6" "/gpio3_2" "/gpio3_5"
+    "/gpio3_3" "/gpio3_4" "/gpio4_6" "/gpio4_1" "/gpio4_5" "/gpio4_2" "/gpio4_4" "/gpio4_3"
+    "/gpio5_6" "/gpio5_1" "/gpio5_5" "/gpio5_2" "/gpio5_4" "/gpio5_3" "/gpio6_1" "unconnected-(A1-Pad52)"
+    "unconnected-(A1-Pad53)" "/gpio6_2" "/gpio6_3" "/gpio6_6" "/gpio6_5" "/gpio6_4" "unconnected-(A1-PadAD6)" "unconnected-(A1-PadAD7)"
+    "unconnected-(A1-PadAD8)" "unconnected-(A1-PadAD9)" "unconnected-(A1-PadAD10)" "unconnected-(A1-PadAD11)" "unconnected-(A1-PadAD12)" "unconnected-(A1-PadAD13)" "unconnected-(A1-PadAD14)" "unconnected-(A1-PadAD15)"
+    "unconnected-(A1-PadAREF)" "unconnected-(A1-PadIOREF)" "unconnected-(A1-PadNC)" "unconnected-(A1-PadRESET)" "unconnected-(A1-PadSCL)" "unconnected-(A1-PadSDA)" "unconnected-(U1-Pad2)" "unconnected-(U1-Pad3)"
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class Power
+    +5V +12V
+    (clearance_class Power)
+    (via_rule Power)
+    (rule
+      (width 500.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class gnd
+    GND
+    (clearance_class gnd)
+    (via_rule gnd)
+    (rule
+      (width 350.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

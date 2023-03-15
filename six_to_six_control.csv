@@ -1,0 +1,8 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"A1";"ARDUINO_mega";1;"Arduino_mega";;;
+2;"U1";"RS-485_module";1;"RS-485_module";;;
+3;"J5,J1,J4,J2,J3,J6";"PinHeader_2x04_P2.54mm_Vertical";6;"relays";;;
+4;"H4,H3,H2,H1";"MountingHole_3.2mm_M3_DIN965_Pad";4;"M3";;;
+5;"J7";"TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal";1;"12V Power";;;
+6;"C1,C2";"C_0603_1608Metric_Pad1.08x0.95mm_HandSolder";2;"100n";;;
+7;"D1";"D_SOD-123";1;"1N4148W";;;
