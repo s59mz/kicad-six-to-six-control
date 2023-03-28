@@ -1,8 +1,42 @@
-"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
-1;"A1";"ARDUINO_mega";1;"Arduino_mega";;;
-2;"U1";"RS-485_module";1;"RS-485_module";;;
-3;"J5,J1,J4,J2,J3,J6";"PinHeader_2x04_P2.54mm_Vertical";6;"relays";;;
-4;"H4,H3,H2,H1";"MountingHole_3.2mm_M3_DIN965_Pad";4;"M3";;;
-5;"J7";"TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal";1;"12V Power";;;
-6;"C1,C2";"C_0603_1608Metric_Pad1.08x0.95mm_HandSolder";2;"100n";;;
-7;"D1";"D_SOD-123";1;"1N4148W";;;
+"Source:","/home/matjaz/kicad/six_to_six_control/six_to_six_control.kicad_sch"
+"Date:","tor 28 mar 2023 15:31:23"
+"Tool:","Eeschema 6.0.9-8da3e8f707~116~ubuntu20.04.1"
+"Generator:","/usr/share/kicad/plugins/bom_csv_grouped_by_value.py"
+"Component Count:","18"
+
+"Individual Components:"
+
+"Item","Qty","Reference(s)","Value","LibPart","Footprint","Datasheet","AVAILABILITY","DESCRIPTION","MANUFACTURER","MF","MP","PACKAGE","PARTREV","PRICE","STANDARD"
+"","","A1","Arduino_mega","Library:Arduino_mega","Library:ARDUINO_mega","","Unavailable","Dev.kit: Arduino; SPI, TWI, UART; ICSP, USB B, pin strips, supply","","Arduino","ARDUINO MEGA2560 REV3 - RETAIL","None","","None",""
+"","","C1","100n","Device:C","Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder","~","","","","","","","","",""
+"","","C2","100n","Device:C","Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder","~","","","","","","","","",""
+"","","D1","1N4148W","Diode:1N4148W","Diode_SMD:D_SOD-123","https://www.vishay.com/docs/85748/1n4148w.pdf","","","","","","","","",""
+"","","H1","M3","Mechanical:MountingHole_Pad","MountingHole:MountingHole_3.2mm_M3_DIN965_Pad","~","","","","","","","","",""
+"","","H2","M3","Mechanical:MountingHole_Pad","MountingHole:MountingHole_3.2mm_M3_DIN965_Pad","~","","","","","","","","",""
+"","","H3","M3","Mechanical:MountingHole_Pad","MountingHole:MountingHole_3.2mm_M3_DIN965_Pad","~","","","","","","","","",""
+"","","H4","M3","Mechanical:MountingHole_Pad","MountingHole:MountingHole_3.2mm_M3_DIN965_Pad","~","","","","","","","","",""
+"","","J1","relays","Connector_Generic:Conn_02x04_Odd_Even","Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical","~","","","","","","","","",""
+"","","J2","relays","Connector_Generic:Conn_02x04_Odd_Even","Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical","~","","","","","","","","",""
+"","","J3","relays","Connector_Generic:Conn_02x04_Odd_Even","Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical","~","","","","","","","","",""
+"","","J4","relays","Connector_Generic:Conn_02x04_Odd_Even","Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical","~","","","","","","","","",""
+"","","J5","relays","Connector_Generic:Conn_02x04_Odd_Even","Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical","~","","","","","","","","",""
+"","","J6","relays","Connector_Generic:Conn_02x04_Odd_Even","Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical","~","","","","","","","","",""
+"","","J8","DB9_Female_MountingHoles","Connector:DB9_Female_MountingHoles","Connector_Dsub:DSUB-9_Female_Horizontal_P2.77x2.84mm_EdgePinOffset9.90mm_Housed_MountingHolesOffset11.32mm"," ~","","","","","","","","",""
+"","","J9","Conn_02x05_Odd_Even","Connector_Generic:Conn_02x05_Odd_Even","Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical","~","","","","","","","","",""
+"","","U1","RS-485_module","Library:RS-485_module","Library:RS-485_module","","","","e-Gizmo","","","","1r0","","Manufacturer Recommendations"
+"","","U2","ENC28J60_module","Library:ENC28J60_module","Library:ENC28J60_module","","","","e-Gizmo","","","","1r0","","Manufacturer Recommendations"
+
+
+
+"Collated Components:"
+
+"Item","Qty","Reference(s)","Value","LibPart","Footprint","Datasheet","AVAILABILITY","DESCRIPTION","MANUFACTURER","MF","MP","PACKAGE","PARTREV","PRICE","STANDARD"
+"1","1","A1","Arduino_mega","Library:Arduino_mega","Library:ARDUINO_mega","","Unavailable","Dev.kit: Arduino; SPI, TWI, UART; ICSP, USB B, pin strips, supply","","Arduino","ARDUINO MEGA2560 REV3 - RETAIL","None","","None",""
+"2","2","C1, C2","100n","Device:C","Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder","~","","","","","","","","",""
+"3","1","D1","1N4148W","Diode:1N4148W","Diode_SMD:D_SOD-123","https://www.vishay.com/docs/85748/1n4148w.pdf","","","","","","","","",""
+"4","4","H1, H2, H3, H4","M3","Mechanical:MountingHole_Pad","MountingHole:MountingHole_3.2mm_M3_DIN965_Pad","~","","","","","","","","",""
+"5","6","J1, J2, J3, J4, J5, J6","relays","Connector_Generic:Conn_02x04_Odd_Even","Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical","~","","","","","","","","",""
+"6","1","J8","DB9_Female_MountingHoles","Connector:DB9_Female_MountingHoles","Connector_Dsub:DSUB-9_Female_Horizontal_P2.77x2.84mm_EdgePinOffset9.90mm_Housed_MountingHolesOffset11.32mm"," ~","","","","","","","","",""
+"7","1","J9","Conn_02x05_Odd_Even","Connector_Generic:Conn_02x05_Odd_Even","Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical","~","","","","","","","","",""
+"8","1","U1","RS-485_module","Library:RS-485_module","Library:RS-485_module","","","","e-Gizmo","","","","1r0","","Manufacturer Recommendations"
+"9","1","U2","ENC28J60_module","Library:ENC28J60_module","Library:ENC28J60_module","","","","e-Gizmo","","","","1r0","","Manufacturer Recommendations"

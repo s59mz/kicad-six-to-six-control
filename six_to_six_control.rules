@@ -11,25 +11,30 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 749)
+    (start_pass_no 2118)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 2.3)
+      (against_preferred_direction_trace_costs 2.5)
     )
     (layer_rule B.Cu
       (active on)
       (preferred_direction vertical)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 1.8)
+      (against_preferred_direction_trace_costs 1.7)
     )
   )
   (rule
     (width 250.0)
-    (clear 200.2)
+    (clear 250.2)
     (clear 125.0 (type smd_to_turn_gap))
-    (clear 50.0 (type smd_smd))
+    (clear 500.2 (type default_Power))
+    (clear 62.6 (type smd_smd))
+    (clear 500.2 (type smd_Power))
+    (clear 500.2 (type "kicad_default"_Power))
+    (clear 500.2 (type Power_Power))
+    (clear 500.2 (type Power_gnd))
   )
   (padstack "Via[0-1]_800:400_um"
     (shape
@@ -65,16 +70,17 @@
     gnd "Via[0-1]_800:400_um-gnd"
   )
   (class default
-    "unconnected-(A1-Pad0)" "unconnected-(A1-Pad1)" "Net-(A1-Pad2)" "unconnected-(A1-Pad3)" "unconnected-(A1-Pad3V3)" "unconnected-(A1-Pad4)" "unconnected-(A1-Pad5)" "unconnected-(A1-Pad5V_1)"
-    "Net-(A1-Pad18)" "unconnected-(A1-Pad6)" "unconnected-(A1-Pad7)" "unconnected-(A1-Pad8)" "unconnected-(A1-Pad9)" "unconnected-(A1-Pad10)" "unconnected-(A1-Pad11)" "unconnected-(A1-Pad12)"
-    "unconnected-(A1-Pad13)" "unconnected-(A1-Pad14)" "unconnected-(A1-Pad15)" "unconnected-(A1-Pad16)" "unconnected-(A1-Pad17)" "Net-(A1-Pad19)" "/gpio1_1" "unconnected-(A1-Pad20)"
-    "unconnected-(A1-Pad21)" "/gpio1_6" "/gpio1_2" "/gpio1_5" "/gpio1_3" "/gpio1_4" "/gpio2_1" "/gpio2_6"
-    "/gpio2_2" "/gpio2_5" "/gpio2_3" "/gpio2_4" "/gpio3_1" "/gpio3_6" "/gpio3_2" "/gpio3_5"
-    "/gpio3_3" "/gpio3_4" "/gpio4_6" "/gpio4_1" "/gpio4_5" "/gpio4_2" "/gpio4_4" "/gpio4_3"
-    "/gpio5_6" "/gpio5_1" "/gpio5_5" "/gpio5_2" "/gpio5_4" "/gpio5_3" "/gpio6_1" "unconnected-(A1-Pad52)"
-    "unconnected-(A1-Pad53)" "/gpio6_2" "/gpio6_3" "/gpio6_6" "/gpio6_5" "/gpio6_4" "unconnected-(A1-PadAD6)" "unconnected-(A1-PadAD7)"
-    "unconnected-(A1-PadAD8)" "unconnected-(A1-PadAD9)" "unconnected-(A1-PadAD10)" "unconnected-(A1-PadAD11)" "unconnected-(A1-PadAD12)" "unconnected-(A1-PadAD13)" "unconnected-(A1-PadAD14)" "unconnected-(A1-PadAD15)"
-    "unconnected-(A1-PadAREF)" "unconnected-(A1-PadIOREF)" "unconnected-(A1-PadNC)" "unconnected-(A1-PadRESET)" "unconnected-(A1-PadSCL)" "unconnected-(A1-PadSDA)" "unconnected-(U1-Pad2)" "unconnected-(U1-Pad3)"
+    "unconnected-(A1-Pad0)" "unconnected-(A1-Pad1)" /d2 /d7 /d8 /d9 /d10 /d11
+    /miso /sck "unconnected-(A1-PadAD6)" "unconnected-(A1-PadAD8)" "unconnected-(A1-PadAD9)" "unconnected-(A1-PadAD10)" "unconnected-(A1-PadAD11)" "unconnected-(A1-PadAD12)"
+    "unconnected-(A1-PadAD13)" /mosi /cs "unconnected-(A1-PadAREF)" "unconnected-(A1-PadIOREF)" "unconnected-(A1-PadNC)" "unconnected-(A1-PadRESET)" "unconnected-(A1-PadSCL)"
+    "unconnected-(A1-PadSDA)" /d22 /d23 /d24 /d25 /d26 /d27 /d28
+    /d29 /d30 /d31 /d32 /d33 /d34 /d35 /d36
+    /d37 /d38 /d39 /d40 /d41 /d42 /d43 /d45
+    /d44 "unconnected-(J8-Pad3)" "Net-(J8-Pad2)" "Net-(J8-Pad1)" "unconnected-(J8-Pad4)" /clkout "unconnected-(J8-Pad7)" "unconnected-(J8-Pad8)"
+    /int /wol /reset /d12 /d13 "unconnected-(A1-Pad14)" "unconnected-(A1-Pad15)" "unconnected-(A1-Pad16)"
+    "unconnected-(A1-Pad17)" "Net-(A1-Pad18)" "Net-(A1-Pad19)" /d3 /d4 /d5 /d6 "unconnected-(A1-Pad20)"
+    "unconnected-(A1-Pad21)" "unconnected-(A1-Pad46)" "unconnected-(A1-Pad47)" "unconnected-(A1-Pad48)" "unconnected-(A1-Pad49)" "unconnected-(A1-PadAD0)" "unconnected-(A1-PadAD1)" "unconnected-(A1-PadAD2)"
+    "unconnected-(A1-PadAD3)" "unconnected-(A1-PadAD4)" "unconnected-(A1-PadAD5)" "unconnected-(A1-PadAD14)" "unconnected-(A1-PadAD15)" /ad7 "unconnected-(A1-Pad5V_2)" "unconnected-(A1-Pad5V_3)"
     (clearance_class default)
     (via_rule default)
     (rule
@@ -95,7 +101,7 @@
     )
   )
   (class Power
-    +5V +12V
+    +3V3 +5V +12V
     (clearance_class Power)
     (via_rule Power)
     (rule
@@ -110,7 +116,7 @@
     (clearance_class gnd)
     (via_rule gnd)
     (rule
-      (width 350.0)
+      (width 400.0)
     )
     (circuit 
       (use_layer F.Cu B.Cu)

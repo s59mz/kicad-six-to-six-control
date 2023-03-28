@@ -1,4 +1,4 @@
-20595542893547197
+20598903016033503
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -58022,6 +58022,20 @@ ARDUINO_mega
 0
 86
 86
+Library
+BarrelJack_Horizontal
+DC Barrel Jack
+Power Jack
+0
+3
+3
+Library
+ENC28J60_module
+
+
+0
+10
+10
 Library
 RS-485_module
 

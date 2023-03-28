@@ -1,0 +1,3 @@
+hole position: 425, 175 mils
+board dimensions: 3050 x 4500 mils
+between boards: 3100 mils
