@@ -4,6 +4,12 @@
 
   (paper "A4")
 
+  (title_block
+    (title "6 on 6 Control")
+    (date "2023-03-28")
+    (rev "1.0")
+  )
+
   (lib_symbols
     (symbol "Connector:DB9_Female_MountingHoles" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "J" (id 0) (at 0 16.51 0)
@@ -2127,13 +2133,13 @@
     (property "Reference" "J8" (id 0) (at 191.77 73.6599 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "DB9_Female_MountingHoles" (id 1) (at 191.77 76.1999 0)
+    (property "Value" "5504F1-09S-02-03" (id 1) (at 191.77 76.1999 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Connector_Dsub:DSUB-9_Female_Horizontal_P2.77x2.84mm_EdgePinOffset9.90mm_Housed_MountingHolesOffset11.32mm" (id 2) (at 186.69 74.93 0)
+    (property "Footprint" "Connector_Dsub:DSUB-9_Female_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm" (id 2) (at 186.69 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" " ~" (id 3) (at 186.69 74.93 0)
+    (property "Datasheet" "https://www.ic-elect.si/fileuploader/download/download/?d=0&file=custom%2Fupload%2FFile-0-50476900-1473920528.pdf" (id 3) (at 186.69 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "0" (uuid a4bc406d-51d7-4581-b15b-4062de2e390d))
@@ -3288,7 +3294,7 @@
       (reference "J6") (unit 1) (value "relays") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical")
     )
     (path "/52333b97-d5d0-4767-8a42-4f99a2ede996"
-      (reference "J8") (unit 1) (value "DB9_Female_MountingHoles") (footprint "Connector_Dsub:DSUB-9_Female_Horizontal_P2.77x2.84mm_EdgePinOffset9.90mm_Housed_MountingHolesOffset11.32mm")
+      (reference "J8") (unit 1) (value "5504F1-09S-02-03") (footprint "Connector_Dsub:DSUB-9_Female_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm")
     )
     (path "/f568ca57-4604-4095-a561-55f3b1417435"
       (reference "J9") (unit 1) (value "Conn_02x05_Odd_Even") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical")

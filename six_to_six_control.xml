@@ -2,14 +2,14 @@
 <export version="E">
   <design>
     <source>/home/matjaz/kicad/six_to_six_control/six_to_six_control.kicad_sch</source>
-    <date>tor 28 mar 2023 15:31:23</date>
+    <date>tor 28 mar 2023 16:46:14</date>
     <tool>Eeschema 6.0.9-8da3e8f707~116~ubuntu20.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
-        <title/>
+        <title>6 on 6 Control</title>
         <company/>
-        <rev/>
-        <date/>
+        <rev>1.0</rev>
+        <date>2023-03-28</date>
         <source>six_to_six_control.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -166,9 +166,9 @@
       <tstamps>3ae82406-901b-4872-873c-60c7d5433f2b</tstamps>
     </comp>
     <comp ref="J8">
-      <value>DB9_Female_MountingHoles</value>
-      <footprint>Connector_Dsub:DSUB-9_Female_Horizontal_P2.77x2.84mm_EdgePinOffset9.90mm_Housed_MountingHolesOffset11.32mm</footprint>
-      <datasheet> ~</datasheet>
+      <value>5504F1-09S-02-03</value>
+      <footprint>Connector_Dsub:DSUB-9_Female_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm</footprint>
+      <datasheet>https://www.ic-elect.si/fileuploader/download/download/?d=0&amp;file=custom%2Fupload%2FFile-0-50476900-1473920528.pdf</datasheet>
       <libsource lib="Connector" part="DB9_Female_MountingHoles" description="9-pin female D-SUB connector, Mounting Hole"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="six_to_six_control.kicad_sch"/>
